@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div id="wrapper">
+    <div class="col-xs-12 dashbdiofont padding center">
+      <h1>Dashbd.io: keep me posted</h1>
+    </div>
+    <div class="col-xs-12 padding">
+      <%= yield %>
+    </div>
+  </div>
 </body>
 </html>
