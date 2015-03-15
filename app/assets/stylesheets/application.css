@@ -14,5 +14,13 @@
  *= require_self
  */
 
-@import "bootstrap-sprockets"
-@import "bootstrap"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(https://fonts.googleapis.com/css?family=Crete+Round);
+
+$landing-font: 'Crete Round', serif;
+
+.h3 {
+  font-family: $landing-font;
+}
