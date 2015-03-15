@@ -1,16 +1,14 @@
-<div id="form">
+<div id="form" class="center">
   <%= simple_form_for(@email) do |f| %>
-    <%= f.error_notification %>
-
     <div class="form-inputs">
-      <%= f.input :email %>
+      <%= f.input :email, input_html: {style: 'height:33px; width:370px' }, label: false, :placeholder => 'Your Email.'  %>
     </div>
-
+    <br>
     <div class="form-actions">
-      <%= f.button :submit, class: 'btn btn-success' do %>
+      <%= f.submit "Sign up!", class: 'btn btn-success' do %>
         <i class="glyphicon glyphicon-plus"></i> New Todo
       <% end %>
     </div>
-
+    <%= f.error_notification %>
   <% end %>
 </div>
